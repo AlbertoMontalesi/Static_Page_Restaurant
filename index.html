@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!--my css-->
     <link rel="stylesheet" href="stylesheets/css/style.css">
-    <script src='script.js'></script>
   </head>
 
   <body>
@@ -30,22 +29,36 @@
       <div class="row no-gutters">
         <!--NAVIGATION-->
         <div class="col-12 col-md-3 navbar_container">
-          <nav>
-            <h1 id='nav-branding'> Restaurant</h1>
-            <ul id='nav_links'>
-              <li><a href='#first'>Home</a></li>
-              <li><a href='#second'>Menu</a></li>
-              <li><a href='#third'>Gallery</a></li>
-              <li><a href='#fourth'>About Us </a></li>
-              <li><a href='#'>1234444444</a></li>
-            </ul>
-            <ul id="nav_social">
-              <li><i class="fa fa-facebook-official" aria-hidden="true"></i>
-              </li>
-              <li> <i class="fa fa-instagram" aria-hidden="true"></i>
-              </li>
 
-            </ul>
+          <nav class="navbar navbar-toggleable-md">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+            <a class="navbar-brand" href="index.html">Restaurant</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                   </a>
+                    <a  href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+              </ul>
+            </div>
           </nav>
 
 
@@ -58,7 +71,8 @@
         <!--CAROUSEL-->
         <div class="col-12 col-md-9 content_container">
           <div class="image_container">
-            <a name='first'> </a> <!--anchor for smoothscroll-->
+            <a name='first'> </a>
+            <!--anchor for smoothscroll-->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -94,7 +108,8 @@
 
           <!--MENU SECTION-->
           <section id="section-menu">
-            <a name='second'> </a> <!--anchor for smoothscroll-->
+            <a name='second'> </a>
+            <!--anchor for smoothscroll-->
             <div id="menu-title">
               <h2> Our delicious dishes</h2>
               <span class='span-line'></span>
@@ -133,7 +148,8 @@
 
           <!--GALLERY SECTION-->
           <section id='section-gallery'>
-            <a name='third'> </a> <!--anchor for smoothscroll-->
+            <a name='third'> </a>
+            <!--anchor for smoothscroll-->
             <div id="gallery-title">
               <h2> A gallery </h2>
               <span class='span-line'></span>
@@ -158,7 +174,8 @@
 
           <!--CONTACT SECTION---->
           <section id="section-contact">
-            <a name='fourth'> </a> <!--anchor for smoothscroll-->
+            <a name='fourth'> </a>
+            <!--anchor for smoothscroll-->
             <div id="contact-title">
               <h2>Contact us</h2>
               <span class='span-line'></span>

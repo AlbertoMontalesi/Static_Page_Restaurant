@@ -35,11 +35,12 @@ h2 {
   @media (max-width: 768px) {
     .navbar_container {
       height: auto;
-      min-height: 10vh; } }
+      min-height: 5vh; } }
   @media (min-width: 769px) {
     .navbar_container {
       height: 100vh;
-      position: fixed; } }
+      position: sticky;
+      top: 0; } }
   .navbar_container a {
     text-decoration: none;
     color: #F1EBDA !important; }
@@ -48,59 +49,63 @@ h2 {
     text-decoration: none;
     color: #c7af6b !important; }
 
+.navbar {
+  width: 100%; }
+  @media (min-width: 769px) {
+    .navbar {
+      height: 100vh;
+      display: flex;
+      flex-direction: column; } }
+
 @media (min-width: 769px) {
-  #nav-branding {
+  .navbar-brand {
+    font-size: 3rem;
     width: 100%;
-    font-size: 5rem;
-    margin-top: 2vh;
+    display: block;
     text-align: center; } }
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 2rem; } }
 
-#nav_links {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-between; }
-  @media (min-width: 769px) {
-    #nav_links {
-      width: 100%;
-      margin-top: 15vh;
-      height: 15vh; } }
+@media (max-width: 768px) {
+  .navbar-toggler {
+    border-color: #F1EBDA; } }
 
-#nav_social {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center; }
-  @media (min-width: 769px) {
-    #nav_social {
-      width: 100%;
-      margin-top: 15vh;
-      height: 15vh; } }
+@media (min-width: 769px) {
+  .navbar-nav {
+    font-size: 1.2rem;
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center; } }
+.navbar-nav i {
+  font-size: 1.4rem;
+  margin-right: 1rem; }
+
+@media (min-width: 769px) {
+  .nav-item {
+    width: 100%;
+    margin-top: 1rem; } }
 
 .content_container {
   color: #1C2024;
   background-color: #F1EBDA; }
   @media (max-width: 768px) {
     .content_container {
-      margin-left: 0;
-      height: 500px; } }
-  @media (min-width: 769px) {
-    .content_container {
-      margin-left: 24%; } }
+      margin-left: 0; } }
 
-.image_container {
+.image_container, .image_container img, .carousel-inner {
   margin: 0;
+  width: 100%;
   padding: 0; }
   @media (max-width: 768px) {
-    .image_container {
-      height: 90vh; } }
+    .image_container, .image_container img, .carousel-inner {
+      height: 95vh; } }
   @media (min-width: 769px) {
-    .image_container {
+    .image_container, .image_container img, .carousel-inner {
       height: 100vh; } }
-
-.image_container img, .carousel-inner {
-  width: 100%;
-  height: 100vh; }
 
 #section-menu, #section-gallery, #section-contact {
   width: 100%;
