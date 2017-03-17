@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif !important; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font-size: 16px; }
+
+.container-fluid {
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
+
+.navbar_container {
+  background-color: #1C2024;
+  color: #F1EBDA; }
+  @media (max-width: 768px) {
+    .navbar_container {
+      height: auto;
+      min-height: 10vh; } }
+  @media (min-width: 769px) {
+    .navbar_container {
+      height: 100vh;
+      position: fixed; } }
+  .navbar_container a {
+    text-decoration: none;
+    color: #F1EBDA !important; }
+  .navbar_container a:hover, .navbar_container a:focus {
+    cursor: pointer;
+    text-decoration: none;
+    color: #c7af6b !important; }
+
+@media (min-width: 769px) {
+  #nav-branding {
+    width: 100%;
+    font-size: 5rem;
+    margin-top: 2vh;
+    text-align: center; } }
+
+#nav_links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between; }
+  @media (min-width: 769px) {
+    #nav_links {
+      width: 100%;
+      margin-top: 15vh;
+      height: 15vh; } }
+
+#nav_social {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center; }
+  @media (min-width: 769px) {
+    #nav_social {
+      width: 100%;
+      margin-top: 15vh;
+      height: 15vh; } }
+
+.content_container {
+  color: #1C2024;
+  background-color: #F1EBDA; }
+  @media (max-width: 768px) {
+    .content_container {
+      margin-left: 0;
+      height: 500px; } }
+  @media (min-width: 769px) {
+    .content_container {
+      margin-left: 24%; } }
+
+.image_container {
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 768px) {
+    .image_container {
+      height: 90vh; } }
+  @media (min-width: 769px) {
+    .image_container {
+      height: 100vh; } }
+
+.image_container img, .carousel-inner {
+  width: 100%;
+  height: 100vh; }
+
+#section-menu, #section-gallery, #section-contact {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center; }
+  @media (max-width: 768px) {
+    #section-menu, #section-gallery, #section-contact {
+      margin-top: 10rem; } }
+
+#menu-title, #gallery-title, #contact-title {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 5rem; }
+
+#menu-items, #gallery-items {
+  width: 100%; }
+
+.menu-item img {
+  width: 100%; }
+
+.gallery-item {
+  background-size: cover;
+  height: 300px;
+  background-position: center; }
+
+.gallery-item:nth-child(1), .gallery-item:nth-child(3) {
+  background: url(https://media2.s-nbcnews.com/j/newscms/2017_11/1201179/food-melissa-clark-citrus-salad-pizza-chicken-tease-today-170314-01_31f11db1405ecd9afa46cba02889b83b.today-vid-hub-featured-desktop.jpg); }
+
+.gallery-item:nth-child(2), .gallery-item:nth-child(4) {
+  background: url(http://s.eatthis-cdn.com/media/images/ext/842849976/greasy-fast-food.jpg); }
+
+.gallery-item span {
+  display: none; }
+
+.gallery-item:hover span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit; }
+
+.gallery-item span p {
+  color: #F1EBDA;
+  display: inline;
+  padding: 1rem;
+  margin: 1rem;
+  border: .5rem solid white; }
+
+.contact-map iframe {
+  width: 100%;
+  height: auto;
+  min-height: 400px; }
+
+/*# sourceMappingURL=style.css.map */
