@@ -18,9 +18,11 @@
       crossorigin="anonymous"></script>
     <!-- GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
-   
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!--my css-->
     <link rel="stylesheet" href="stylesheets/css/style.css">
+    <script src='script.js'></script>
   </head>
 
   <body>
@@ -31,15 +33,17 @@
           <nav>
             <h1 id='nav-branding'> Restaurant</h1>
             <ul id='nav_links'>
-              <li><a>Home</a></li>
-              <li><a>Menu</a></li>
-              <li><a href="">gallery</a></li>
-              <li><a>Abou</a>t Us</li>
-              <li><a>1234444444</a></li>
+              <li><a href='#first'>Home</a></li>
+              <li><a href='#second'>Menu</a></li>
+              <li><a href='#third'>Gallery</a></li>
+              <li><a href='#fourth'>About Us </a></li>
+              <li><a href='#'>1234444444</a></li>
             </ul>
             <ul id="nav_social">
-              <li>Facebook</li>
-              <li> Instagram</li>
+              <li><i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </li>
+              <li> <i class="fa fa-instagram" aria-hidden="true"></i>
+              </li>
 
             </ul>
           </nav>
@@ -54,6 +58,7 @@
         <!--CAROUSEL-->
         <div class="col-12 col-md-9 content_container">
           <div class="image_container">
+            <a name='first'> </a> <!--anchor for smoothscroll-->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -89,8 +94,10 @@
 
           <!--MENU SECTION-->
           <section id="section-menu">
+            <a name='second'> </a> <!--anchor for smoothscroll-->
             <div id="menu-title">
-              <h1> Our delicious dishes</h1>
+              <h2> Our delicious dishes</h2>
+              <span class='span-line'></span>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
                 dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
                 Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
@@ -101,19 +108,19 @@
               <div class="menu-item col-4">
                 <!-- food1 -->
                 <img src="http://www.photl.com/images/photos/2009/10/30/2148/wm195710tt.jpg" alt="">
-                <h2>Food</h2>
+                <h3>Food</h3>
                 <span>Very tasty food</span>
               </div>
               <div class="menu-item col-4">
                 <!-- food2-->
                 <img src="http://www.photl.com/images/photos/2009/10/30/2148/wm195710tt.jpg" alt="">
-                <h2>Food</h2>
+                <h3>Food</h3>
                 <span>Very tasty food</span>
               </div>
               <div class="menu-item col-4">
                 <!-- food3 -->
                 <img src="http://www.photl.com/images/photos/2009/10/30/2148/wm195710tt.jpg" alt="">
-                <h2>Food</h2>
+                <h3>Food</h3>
                 <span>Very tasty food</span>
               </div>
 
@@ -126,8 +133,10 @@
 
           <!--GALLERY SECTION-->
           <section id='section-gallery'>
+            <a name='third'> </a> <!--anchor for smoothscroll-->
             <div id="gallery-title">
-              <h1> A gallery </h1>
+              <h2> A gallery </h2>
+              <span class='span-line'></span>
             </div>
             <div id="gallery-items" class='row no-gutters'>
               <div class="gallery-item col-12 col-sm-6 col-md-3">
@@ -147,35 +156,44 @@
           </section>
           <!-- end gallery section -->
 
+          <!--CONTACT SECTION---->
           <section id="section-contact">
+            <a name='fourth'> </a> <!--anchor for smoothscroll-->
             <div id="contact-title">
-              <h1>Contact us</h1>
+              <h2>Contact us</h2>
+              <span class='span-line'></span>
             </div>
             <div id="contact-items" class='row no-gutters'>
               <div class="contact-contacts col-12 row">
                 <div class="contact-item col-4">
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>phone</span>
+                  <span>133444124</span>
                 </div>
                 <div class="contact-item col-4">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span>Email</span>
+                  <span>example@example.com</span>
                 </div>
                 <div class="contact-item col-4">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>Address</span>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>91 pham van hai</span>
                 </div>
               </div>
+              <!-- end contact-contacts -->
               <div class="contact-map col-12">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.95155241548628!2d106.66306743998497!3d10.794084268695581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293261266c13%3A0x65e718da4e43e427!2zOTEtQTYgUGjhuqFtIFbEg24gSGFpLCBwaMaw4budbmcgMywgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1489724701792"
                   frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
             </div>
-
-
           </section>
           <!-- section-contact end -->
 
+          <!-- FOOTER -->
+          <footer>
+            <div id="footer-contacts">
+              <p> Copyright &copy; Alberto Montalesi 2017 </p>
+            </div>
+          </footer>
+          <!-- footer end-->
         </div>
         <!-- end content_container -->
       </div>
