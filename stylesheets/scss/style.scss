@@ -4,6 +4,7 @@
 //COLORS
 $color_background:#F1EBDA;
 $color_navbar:#1C2024;
+$color_footer: #E5E3D6;
 $color_font_page: $color_navbar;
 $color_font_navbar: $color_background;
 $color_font_navbar_light: darken($color_font_navbar,30%);
@@ -23,7 +24,9 @@ $brk_md_up : '(min-width: 769px)';
 li {
   list-style-type: none;
 }
-body { font-size: 16px;}
+body { font-size: 18px;
+overflow-x: hidden;
+}
 .container-fluid {
   width: 100vw;
   margin: 0;
@@ -127,6 +130,29 @@ body { font-size: 16px;}
   }
 }
 
+//ADDITIONAL INFO ONLY ON BIGGE SCREEN
+.navbar-address {
+  text-align: center;
+  @media #{$brk_xs_to_md} {
+    display: none;
+  }
+  @media #{$brk_md_up} {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+.navbar-address span {
+  content: "";
+  border-top: 0.05rem solid $color_font_navbar;
+  display: block;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.navbar-address li {
+  margin-top: 1rem;
+}
 
 
 
@@ -171,15 +197,19 @@ body { font-size: 16px;}
   }
 } 
 #menu-title,#gallery-title,#contact-title {
+  width: 70%;
+  margin: 8rem auto 4rem auto;
   padding-left:2rem;
   padding-right: 2rem;
-  margin-bottom: 5rem;
 }
 #menu-items,#gallery-items {
-  width: 100%;
+  width: 90%;
+  margin:0 5%;
 }
 .menu-item img {
   width: 100%;
+  height: 400px;
+  margin-bottom: 1rem;
 }
 
 
@@ -236,15 +266,23 @@ body { font-size: 16px;}
 .contact-map iframe {
   width: 100%;
   height: auto;
-  min-height: 400px;
+  @media #{$brk_xs_to_md}{
+    min-height: 300px;
+  } 
+  @media #{$brk_md_up} {
+    min-height: 500px;
+  }
+
 }
 
 
 ///FOOTER
-
-#footer-contacts {
+footer {
+  height: 5rem;
+  margin-top: 5rem;
   width: 100%;
   text-align: center;
-  margin-top: 5rem;
-  }
+  padding-top: 2rem;
+  background-color: $color_footer;
+}
 
