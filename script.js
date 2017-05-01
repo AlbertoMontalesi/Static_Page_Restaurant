@@ -4,7 +4,7 @@ $( document ).ready(function() {
         var strip = target.slice(1);
         var anchor = $("a[name='" + strip + "']");
         e.preventDefault();
-
+        
         $('html, body').animate({
             scrollTop: anchor.offset().top
           }, 'slow' );

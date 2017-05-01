@@ -29,6 +29,10 @@ h2 {
   background-color: #F1EBDA;
   width: 300px;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    h2 {
+      width: 100%;
+      text-align: center; } }
 
 .navbar_container {
   background-color: #1C2024;
@@ -60,7 +64,9 @@ h2 {
 
 @media (min-width: 769px) {
   .navbar-brand {
-    font-size: 3rem;
+    padding-top: 30px;
+    font-size: 4rem;
+    transform: scale(1, 2);
     width: 100%;
     display: block;
     text-align: center; } }
@@ -68,9 +74,15 @@ h2 {
   .navbar-brand {
     font-size: 2rem; } }
 
-@media (max-width: 768px) {
-  .navbar-toggler {
-    border-color: #F1EBDA; } }
+.navbar-toggler {
+  margin-right: 15px;
+  margin-top: 8px; }
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      border-color: #F1EBDA; } }
+
+.navbar-toggler-icon {
+  background-image: url("../../images/hamburger.svg") !important; }
 
 @media (min-width: 769px) {
   .navbar-nav {
@@ -119,16 +131,46 @@ h2 {
     .content_container {
       margin-left: 0; } }
 
-.image_container, .image_container img, .carousel-inner {
+.image_container, .image_container img, #main-banner {
   margin: 0;
   width: 100%;
   padding: 0; }
   @media (max-width: 768px) {
-    .image_container, .image_container img, .carousel-inner {
+    .image_container, .image_container img, #main-banner {
       height: 95vh; } }
   @media (min-width: 769px) {
-    .image_container, .image_container img, .carousel-inner {
+    .image_container, .image_container img, #main-banner {
       height: 100vh; } }
+
+#main-banner {
+  position: relative;
+  background-image: url("../../images/MATCHA-TOP2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1C2024;
+  display: flex; }
+
+#main-banner::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1C2024;
+  opacity: 0.3; }
+
+#main-banner h3 {
+  width: auto;
+  z-index: 2;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-weight: bold;
+  transform: scale(1, 2);
+  text-transform: uppercase;
+  margin: auto;
+  font-size: 3rem;
+  color: #F1EBDA; }
 
 #section-menu, #section-gallery, #section-contact {
   width: 100%;
@@ -150,25 +192,34 @@ h2 {
 
 .menu-item img {
   width: 100%;
-  height: 400px;
-  margin-bottom: 1rem; }
+  height: auto; }
+
+.menu-item {
+  margin-top: 30px; }
 
 .gallery-item {
   background-size: cover;
-  height: 300px;
-  background-position: center; }
+  background-position: center;
+  height: 300px; }
 
-.gallery-item:nth-child(1), .gallery-item:nth-child(3) {
-  background: url(https://media2.s-nbcnews.com/j/newscms/2017_11/1201179/food-melissa-clark-citrus-salad-pizza-chicken-tease-today-170314-01_31f11db1405ecd9afa46cba02889b83b.today-vid-hub-featured-desktop.jpg); }
+.gallery-item:nth-child(1) {
+  background-image: url("../../images/matcha.jpg"); }
 
-.gallery-item:nth-child(2), .gallery-item:nth-child(4) {
-  background: url(http://s.eatthis-cdn.com/media/images/ext/842849976/greasy-fast-food.jpg); }
+.gallery-item:nth-child(2) {
+  background-image: url("../../images/soybean.jpg"); }
+
+.gallery-item:nth-child(3) {
+  background-image: url("../../images/chocolate.jpg"); }
+
+.gallery-item:nth-child(4) {
+  background-image: url("../../images/SET1.jpg"); }
 
 .gallery-item span {
   display: none; }
 
 .gallery-item:hover span {
   display: flex;
+  background-color: rgba(28, 32, 36, 0.6);
   flex-direction: column;
   justify-content: center;
   height: inherit; }
@@ -185,6 +236,12 @@ h2 {
 
 .contact-item i, .contact-item.span {
   display: block; }
+
+.contact-item span {
+  width: 100%; }
+  @media (max-width: 768px) {
+    .contact-item span {
+      font-size: 3vw; } }
 
 .contact-item i {
   font-size: 3rem;
