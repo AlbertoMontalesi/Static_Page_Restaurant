@@ -12,9 +12,11 @@ $color_background_light:lighten(#ecf0f1,30%);
 
 
 //MEDIA QUERIES
-$brk_xs_to_md:'(max-width:768px)';
+$brk_xs_to_md:'(max-width: 768px)';
 $brk_md_up : '(min-width: 769px)';
 
+$brk_xs_to_lg: '(max-width :991px)';
+$brk_lg_up: '(min-width: 992px)'; 
 //GENERAL RULES
 * {
   margin: 0 ;
@@ -65,11 +67,11 @@ overflow-x: hidden;
   color: $color_font_navbar;
   
   
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     height:auto;
     min-height: 5vh
   }
-  @media #{$brk_md_up} {
+  @media #{$brk_lg_up} {
     height: 100vh;
     position: sticky;
     top: 0;
@@ -86,7 +88,8 @@ overflow-x: hidden;
 }
 .navbar {
   width: 100%;
-  @media #{$brk_md_up} {
+  // LARGE UP AND NOT MEDIUM
+  @media #{$brk_lg_up} {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -94,15 +97,15 @@ overflow-x: hidden;
 }
 
 .navbar-brand {
-  @media #{$brk_md_up} {
-    padding-top: 30px;
-    font-size: 4rem;
+  @media #{$brk_lg_up} {
+    margin-top: 70px;
+    font-size: 3vw;
     transform: scale(1,2);
     width: 100%;
     display:block;
     text-align: center;
   }
-  @media #{$brk_xs_to_md}{
+  @media #{$brk_xs_to_lg}{
     font-size: 2rem;
   } 
 }
@@ -110,7 +113,7 @@ overflow-x: hidden;
 .navbar-toggler {
   margin-right: 15px;
   margin-top: 8px;
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     border-color: $color_font_navbar;
   }
 }
@@ -119,7 +122,7 @@ overflow-x: hidden;
 }
 //style the navlinks
 .navbar-nav {
-  @media #{$brk_md_up} {
+  @media #{$brk_lg_up} {
     font-size: 1.2rem;
   margin-top: 10rem;
   width: 100%;
@@ -134,7 +137,7 @@ overflow-x: hidden;
   }
 }
 .nav-item {
-  @media #{$brk_md_up} {
+  @media #{$brk_lg_up} {
     width: 100%;
     margin-top: 1rem;
   }
@@ -143,10 +146,10 @@ overflow-x: hidden;
 //ADDITIONAL INFO ONLY ON BIGGE SCREEN
 .navbar-address {
   text-align: center;
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     display: none;
   }
-  @media #{$brk_md_up} {
+  @media #{$brk_lg_up} {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -157,8 +160,8 @@ overflow-x: hidden;
   border-top: 0.05rem solid $color_font_navbar;
   display: block;
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .navbar-address li {
   margin-top: 1rem;
@@ -166,30 +169,28 @@ overflow-x: hidden;
 
 
 
+
 //MAIN PAGE
 .content_container  {
   color: $color_font_page;
   background-color: $color_background;
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     margin-left: 0;
   }
-  @media #{$brk_md_up} {
-  }
-
   
 }
     //MAIN CONTENT///
 ///////////////////////
 
-//CAROUSEL
+//BANNER
 .image_container,.image_container img, #main-banner {
   margin: 0;
   width: 100%;
   padding: 0;
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     height: 95vh;
   }
-  @media #{$brk_md_up} {
+  @media #{$brk_lg_up} {
     height: 100vh;
   }  
 }
@@ -222,6 +223,9 @@ overflow-x: hidden;
   margin: auto;
   font-size: 3rem;
   color: $color_font_navbar;
+  @media #{$brk_lg_up} {
+    font-size: 5vw;
+  }
 }
  
 //MENU
@@ -231,7 +235,7 @@ overflow-x: hidden;
   margin-top: 5rem;
   text-align: center;
   
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     margin-top: 10rem;
   }
 } 
@@ -303,7 +307,7 @@ overflow-x: hidden;
 }
 .contact-item span {
   width: 100%;
-  @media #{$brk_xs_to_md} {
+  @media #{$brk_xs_to_lg} {
     font-size:3vw;    
   }
   
@@ -317,10 +321,10 @@ overflow-x: hidden;
 .contact-map iframe {
   width: 100%;
   height: auto;
-  @media #{$brk_xs_to_md}{
+  @media #{$brk_xs_to_lg}{
     min-height: 300px;
   } 
-  @media #{$brk_md_up} {
+  @media #{$brk_lg_up} {
     min-height: 500px;
   }
 

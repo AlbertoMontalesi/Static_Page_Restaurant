@@ -37,11 +37,11 @@ h2 {
 .navbar_container {
   background-color: #1C2024;
   color: #F1EBDA; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar_container {
       height: auto;
       min-height: 5vh; } }
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     .navbar_container {
       height: 100vh;
       position: sticky;
@@ -56,35 +56,35 @@ h2 {
 
 .navbar {
   width: 100%; }
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     .navbar {
       height: 100vh;
       display: flex;
       flex-direction: column; } }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .navbar-brand {
-    padding-top: 30px;
-    font-size: 4rem;
+    margin-top: 70px;
+    font-size: 3vw;
     transform: scale(1, 2);
     width: 100%;
     display: block;
     text-align: center; } }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar-brand {
     font-size: 2rem; } }
 
 .navbar-toggler {
   margin-right: 15px;
   margin-top: 8px; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar-toggler {
       border-color: #F1EBDA; } }
 
 .navbar-toggler-icon {
   background-image: url("../../images/hamburger.svg") !important; }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .navbar-nav {
     font-size: 1.2rem;
     margin-top: 10rem;
@@ -97,17 +97,17 @@ h2 {
   font-size: 1.4rem;
   margin-right: 1rem; }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .nav-item {
     width: 100%;
     margin-top: 1rem; } }
 
 .navbar-address {
   text-align: center; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .navbar-address {
       display: none; } }
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     .navbar-address {
       display: flex;
       flex-direction: column;
@@ -118,8 +118,8 @@ h2 {
   border-top: 0.05rem solid #F1EBDA;
   display: block;
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .navbar-address li {
   margin-top: 1rem; }
@@ -127,7 +127,7 @@ h2 {
 .content_container {
   color: #1C2024;
   background-color: #F1EBDA; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .content_container {
       margin-left: 0; } }
 
@@ -135,10 +135,10 @@ h2 {
   margin: 0;
   width: 100%;
   padding: 0; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .image_container, .image_container img, #main-banner {
       height: 95vh; } }
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     .image_container, .image_container img, #main-banner {
       height: 100vh; } }
 
@@ -171,12 +171,15 @@ h2 {
   margin: auto;
   font-size: 3rem;
   color: #F1EBDA; }
+  @media (min-width: 992px) {
+    #main-banner h3 {
+      font-size: 5vw; } }
 
 #section-menu, #section-gallery, #section-contact {
   width: 100%;
   margin-top: 5rem;
   text-align: center; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     #section-menu, #section-gallery, #section-contact {
       margin-top: 10rem; } }
 
@@ -239,7 +242,7 @@ h2 {
 
 .contact-item span {
   width: 100%; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .contact-item span {
       font-size: 3vw; } }
 
@@ -250,10 +253,10 @@ h2 {
 .contact-map iframe {
   width: 100%;
   height: auto; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .contact-map iframe {
       min-height: 300px; } }
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     .contact-map iframe {
       min-height: 500px; } }
 
