@@ -1,7 +1,8 @@
 # **Static_Page_Restaurant**
 ## [Heroku Url](https://soyo-bar.herokuapp.com/index.html)
+
 Single static page for a restaurant.
-This website is an example of a clean, simple one page layout for a small restaurant/bar offering wanting to showcase some of their offer without the need of advanced features.
+This website is an example of a clean, simple one page layout for a small restaurant/bar offering wanting to showcase some of their offer without the need of advanced features. 
 ===================================
 ## Infos
 - Time spent: 7 Hours Design + code
@@ -14,6 +15,9 @@ This website is an example of a clean, simple one page layout for a small restau
 - Bootstrap 4
 - Scss
 ---
+![responsive image](SOYO_RESPONSIVE.png)
+---
+
 ## License
 
     Copyright [2017] [Alberto Montalesi]
